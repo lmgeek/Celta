@@ -1,0 +1,35 @@
+{
+  "name": "formaldehid/laravel-theme-inspinia",
+  "description": "Laravel helpers for theme Inspinia",
+  "keywords": [
+    "laravel",
+    "inspinia"
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5",
+    "yajra/laravel-datatables-html": "^3.2",
+    "yajra/laravel-datatables-oracle": "~8.0",
+    "proengsoft/laravel-jsvalidation": "^2.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marko Šabec"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Formaldehid\\Laravel\\Theme\\Inspinia\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Formaldehid\\Laravel\\Theme\\Inspinia\\ServiceProvider",
+        "Formaldehid\\Laravel\\Theme\\Inspinia\\DataTables\\ServiceProvider",
+        "Formaldehid\\Laravel\\Theme\\Inspinia\\DataTables\\HtmlServiceProvider"
+      ]
+    }
+  }
+}
