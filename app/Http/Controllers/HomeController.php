@@ -31,11 +31,11 @@ class HomeController extends Controller
     public function users()
     {
         //$users = DB::table('users')->get();
-        $users = User::all();
-        $title = 'Listado de usuarios';
-//        return view('users.index')
-//            ->with('users', User::all())
-//            ->with('title', 'Listado de usuarios');
-        return view('users', compact('title', 'users'));
+//        $users = User::all();
+//        $title = 'Listado de usuarios';
+////        return view('users.index')
+////            ->with('users', User::all())
+////            ->with('title', 'Listado de usuarios');
+//        return view('users', compact('title', 'users'));
     }
 }

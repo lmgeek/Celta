@@ -9,12 +9,14 @@
 
 @extends('layouts.app')
 
-@section('title', 'Usuarios')
+@section('title', 'Conpanies')
 
 @section('content')
     <h1>{{ $title }}</h1>
 
-
+    <button class="btn btn-primary " type="button" onclick="location.href = '{{ route('company.create') }}'">
+        <i class="fa fa-plus"></i>&nbsp;Agregar
+    </button>
 
     <ul>
         @forelse ($companies as $c)

@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
+use App\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class CompanyController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,9 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $companies = Company::all();
-        $title = 'Listado de Compañias';
-
-        return view('companies.index', compact('title', 'companies'));
+        $users = User::all();
+        $title = 'Listado de usuarios';
+        return view('users.users', compact('title', 'users'));
     }
 
     /**
@@ -28,8 +26,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        $title = 'Agregar Compañia';
-        return view('companies.create', compact('title'));
+        //
     }
 
     /**

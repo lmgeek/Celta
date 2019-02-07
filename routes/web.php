@@ -23,6 +23,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/users', 'HomeController@users')->name('users');
+//Route::get('/users', 'HomeController@users')->name('users');
 
 Route::get('/company', 'CompanyController@index')->name('company');
+
+Route::group(['prefix' => 'admin'], function(){
+
+    Route::resource('user', 'UserController');
+
+    Route::resource('company', 'CompanyController');
+});

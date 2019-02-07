@@ -6,3 +6,5 @@
     <strong>&copy; Copyright {{ date('Y') }}</strong> {{ config('app.name', 'Inspinia') }}
   </div>
 </div>
+
+
